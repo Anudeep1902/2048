@@ -213,18 +213,19 @@ document.addEventListener("DOMContentLoaded", () => {
     //add colours
     function addColours() {
         for (let i = 0; i < squares.length; i++) {
-            if (squares[i].innerHTML == 0) squares[i].style.backgroundColor = "#afa192"
-            else if (squares[i].innerHTML == 2) squares[i].style.backgroundColor = "#eee4da"
-            else if (squares[i].innerHTML == 4) squares[i].style.backgroundColor = "#ede0c8"
-            else if (squares[i].innerHTML == 8) squares[i].style.backgroundColor = "#f2b179"
-            else if (squares[i].innerHTML == 16) squares[i].style.backgroundColor = "#ffcea4"
-            else if (squares[i].innerHTML == 32) squares[i].style.backgroundColor = "#e8c064"
-            else if (squares[i].innerHTML == 64) squares[i].style.backgroundColor = "#ffab6e"
-            else if (squares[i].innerHTML == 128) squares[i].style.backgroundColor = "#fd9982"
-            else if (squares[i].innerHTML == 256) squares[i].style.backgroundColor = "#ead79c"
-            else if (squares[i].innerHTML == 512) squares[i].style.backgroundColor = "#76daff"
-            else if (squares[i].innerHTML == 1024) squares[i].style.backgroundColor = "#beeaa5"
-            else if (squares[i].innerHTML == 2048) squares[i].style.backgroundColor = "#d7d4f0"
+            const value = squares[i].innerHTML;
+            if (value == 0) squares[i].style.backgroundColor = "#cdc1b4";
+            else if (value == 2) squares[i].style.backgroundColor = "#eee4da";
+            else if (value == 4) squares[i].style.backgroundColor = "#ede0c8";
+            else if (value == 8) squares[i].style.backgroundColor = "#f2b179";
+            else if (value == 16) squares[i].style.backgroundColor = "#f59563";
+            else if (value == 32) squares[i].style.backgroundColor = "#f67c5f";
+            else if (value == 64) squares[i].style.backgroundColor = "#f65e3b";
+            else if (value == 128) squares[i].style.backgroundColor = "#edcf72";
+            else if (value == 256) squares[i].style.backgroundColor = "#edcc61";
+            else if (value == 512) squares[i].style.backgroundColor = "#edc850";
+            else if (value == 1024) squares[i].style.backgroundColor = "#edc53f";
+            else if (value == 2048) squares[i].style.backgroundColor = "#edc22e";
         }
     }
     addColours()
